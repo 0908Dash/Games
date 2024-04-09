@@ -1,1 +1,40 @@
+.controls div p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold; /* Add bold font weight */
+    color: inherit; /* Inherit color from parent */
+}
 
+.controls div {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333; /* Set default color for the control buttons */
+}
+
+/* Apply color to the margin */
+.controls div.w {
+    margin: 0 5px 5px 0; /* Top margin: 0, Right margin: 5px, Bottom margin: 5px, Left margin: 0 */
+    color: #333; /* Color the margin same as the letter */
+}
+
+.controls div.a {
+    margin: 0 5px 0 0; /* Top margin: 0, Right margin: 5px, Bottom margin: 0, Left margin: 0 */
+    color: #333; /* Color the margin same as the letter */
+}
+
+.controls div.s {
+    margin: 5px 5px 0 0; /* Top margin: 5px, Right margin: 5px, Bottom margin: 0, Left margin: 0 */
+    color: #333; /* Color the margin same as the letter */
+}
+
+.controls div.d {
+    margin: 5px 0 0 0; /* Top margin: 5px, Right margin: 0, Bottom margin: 0, Left margin: 0 */
+    color: #333; /* Color the margin same as the letter */
+}
