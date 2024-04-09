@@ -1,8 +1,53 @@
-.controls div p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold; /* Add bold font weight */
-    color: inherit; /* Inherit color from parent */
+/* Add these styles to your spacesalvage.css file */
+
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-color: #000;
+    overflow: hidden; /* Ensure game elements stay within container */
+}
+
+.spacecraft {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Planet {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: #4b6cb7; /* Blue color */
+    border-radius: 50%;
+    opacity: 0.8; /* Adjust opacity as needed */
+}
+
+.obstacle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000; /* Red color */
+}
+
+.stars {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff; /* White color */
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
 }
 
 .controls div {
@@ -18,23 +63,26 @@
     color: #333; /* Set default color for the control buttons */
 }
 
+.controls div p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold; /* Add bold font weight */
+    color: inherit; /* Inherit color from parent */
+}
+
 /* Apply color to the margin */
 .controls div.w {
     margin: 0 5px 5px 0; /* Top margin: 0, Right margin: 5px, Bottom margin: 5px, Left margin: 0 */
-    color: #333; /* Color the margin same as the letter */
 }
 
 .controls div.a {
     margin: 0 5px 0 0; /* Top margin: 0, Right margin: 5px, Bottom margin: 0, Left margin: 0 */
-    color: #333; /* Color the margin same as the letter */
 }
 
 .controls div.s {
     margin: 5px 5px 0 0; /* Top margin: 5px, Right margin: 5px, Bottom margin: 0, Left margin: 0 */
-    color: #333; /* Color the margin same as the letter */
 }
 
 .controls div.d {
     margin: 5px 0 0 0; /* Top margin: 5px, Right margin: 0, Bottom margin: 0, Left margin: 0 */
-    color: #333; /* Color the margin same as the letter */
 }
