@@ -119,3 +119,16 @@ body {
     background-color: #af0585;
 }
 
+
+footer {
+  color: #ffffff;
+  background-color: #630C63;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
