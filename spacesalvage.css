@@ -45,9 +45,11 @@
 
 .controls {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 100px;
+    left: 100px;
     display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: flex-start; /* Align buttons to the start of the column */
 }
 
 .controls div {
@@ -57,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin between buttons */
     border-radius: 5px;
     cursor: pointer;
     color: #333; /* Set default color for the control buttons */
