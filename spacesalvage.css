@@ -65,6 +65,11 @@
     color: #333; /* Set default color for the control buttons */
 }
 
+.controls .bottom {
+    display: flex;
+    justify-items: space-between;
+}
+
 .controls div p {
     margin: 0;
     font-size: 18px;
