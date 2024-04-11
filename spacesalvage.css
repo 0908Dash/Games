@@ -52,7 +52,7 @@
     align-items: flex-start; /* Align buttons to the start of the column */
 }
 
-.controls div {
+.controls div, .controls .bottom {
     width: 40px;
     height: 40px;
     background-color: #ccc;
