@@ -57,6 +57,7 @@
     height: 40px;
     background-color: #ccc;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px; /* Add margin between buttons */
     border-radius: 5px;
     cursor: pointer;
