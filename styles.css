@@ -119,16 +119,10 @@ body {
     background-color: #af0585;
 }
 
-
-footer {
-  color: #ffffff;
-  background-color: #630C63;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
+.coming-soon {
+    align-self: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-footer a {
-	color: #ffffff;
-	text-decoration: none;
-}
+@media only screen and (max-width: 828px) and (max-height: 1792px) {}
