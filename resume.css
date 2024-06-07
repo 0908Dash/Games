@@ -27,11 +27,26 @@
 .line1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures there is space between items */
-    gap: 4ch; /* Adds a minimum gap of 4 character spaces between items */
+    justify-content: center; /* Center items */
+    gap: 4ch; /* Minimum gap of 4 character spaces */
     padding: 2px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* For screens 1366px or wider */
+@media (min-width: 1366px) {
+    .line1 {
+        justify-content: space-evenly; /* Distribute items evenly */
+        gap: 4ch; /* Minimum gap of 4 character spaces */
+        max-width: 10ch; /* Maximum gap of 10 character spaces */
+    }
+}
+
+.line1 > div {
+    flex: 1 1 200px; /* Ensures items have a minimum width and can grow */
+    min-width: 200px; /* Sets a minimum width for items */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
 .sname, .lname, .ename, .cname, .bname {
