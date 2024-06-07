@@ -39,13 +39,13 @@
     .line1 {
         justify-content: space-evenly; /* Distribute items evenly */
         gap: 4ch; /* Minimum gap of 4 character spaces */
-        max-width: 10ch; /* Maximum gap of 10 character spaces */
     }
 }
 
 .line1 > div {
-    flex: 1 1 200px; /* Ensures items have a minimum width and can grow */
+    flex: 1 1 auto; /* Allow items to grow and shrink as needed */
     min-width: 200px; /* Sets a minimum width for items */
+    max-width: calc((100% - (10ch * 3)) / 4); /* Max width based on 10ch gap for 4 items */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
 
